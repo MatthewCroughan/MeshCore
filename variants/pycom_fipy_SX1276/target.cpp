@@ -25,6 +25,11 @@ bool radio_init() {
   fallback_clock.begin();
   rtc_clock.begin(Wire);
 
+#if defined(ANT_SELECT)
+  pinMode(ANT_SELECT, OUTPUT);
+  digitalWrite(ANT_SELECT, HIGH);
+#endif
+
 #if defined(P_LORA_SCLK)
   return radio.std_init(&spi);
 #else

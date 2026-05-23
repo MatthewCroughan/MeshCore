@@ -4,7 +4,7 @@
 #include <RadioLib.h>
 #include <helpers/radiolib/RadioLibWrappers.h>
 #include <FiPYBoard.h>
-#include <helpers/radiolib/CustomSX1276Wrapper.h>
+#include <helpers/radiolib/CustomSX1272Wrapper.h>
 #include <helpers/AutoDiscoverRTCClock.h>
 #include <helpers/SensorManager.h>
 #ifdef DISPLAY_CLASS
